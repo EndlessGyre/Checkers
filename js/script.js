@@ -133,7 +133,7 @@ function getAvailableSpaces(){
   if(board[selectedPiece.indexOfBoardPiece - 9] === null && cells[selectedPiece.indexOfBoardPiece - 9].classList.contains('noPieceHere') !== true){
     selectedPiece.minusNinthSpace = true;
   }
-  //console.log('getAvailableJumpSpaces is invoked!');
+  console.log('getAvailableJumpSpaces is invoked!\nselectedPiece.minusNinthSpace = ' + selectedPiece.minusNinthSpace);
   checkAvailableJumpSpaces();
 }
 
