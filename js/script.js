@@ -161,7 +161,7 @@ function checkAvailableJumpSpaces(){
     if(board[selectedPiece.indexOfBoardPiece - 14] === null && cells[selectedPiece.indexOfBoardPiece - 14].classList.contains('noPieceHere') !== true && board[selectedPiece.indexOfBoardPiece - 7] < 12 && board[selectedPiece.indexOfBoardPiece - 7] !== null){
       selectedPiece.minusFourteenthSpace = true;
     }
-    if(board[selectedPiece.indexOfBoardPiece - 18] === null && cells[selectedPiece.indexOfBoardPiece - 18].classList.contains('noPieceHere') !== true && board[selectedPiece.indexOfBoardPiece - 9] < 12 && board[selectedPiece.indexOfBoardPiece - 7] !== null){
+    if(board[selectedPiece.indexOfBoardPiece - 18] === null && cells[selectedPiece.indexOfBoardPiece - 18].classList.contains('noPieceHere') !== true && board[selectedPiece.indexOfBoardPiece - 9] < 12 && board[selectedPiece.indexOfBoardPiece - 9] !== null){
       selectedPiece.minusEighteenthSpace = true;
     }
   }
@@ -179,10 +179,10 @@ function checkPieceConditions(){
       selectedPiece.minusFourteenthSpace = false;
       selectedPiece.minusEighteenthSpace = false;
     }else{
-      selectedPiece.minusSeventhSpace = false;
-      selectedPiece.minusNinthSpace = false;
-      selectedPiece.minusFourteenthSpace = false;
-      selectedPiece.minusEighteenthSpace = false;
+      selectedPiece.seventhSpace = false;
+      selectedPiece.ninthSpace = false;
+      selectedPiece.fourteenthSpace = false;
+      selectedPiece.eighteenthSpace = false;
     }
     //console.log('checkPieceConditions invoked!');
     givePieceBorder();
